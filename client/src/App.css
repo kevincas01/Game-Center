@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+body{
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.join-room{
+  display: flex;
+  flex-direction: column;
+color:white;
+  margin: 0px;
+  background-color: black;
+  height: 100vh;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-text{
+  position: absolute;
+  top:10px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@keyframes rainbowBorder {
+  0% { border-color: violet; color:violet}
+  16.67% { border-color: rgb(157, 20, 255);color:rgb(157, 20, 255); }
+  33.33% { border-color: blue;color:blue; }
+  50% { border-color: green;color:green; }
+  66.67% { border-color: yellow;color:yellow; }
+  83.33% { border-color: orange;color:orange; }
+  100% { border-color: red;color:red; }
+}
+input::placeholder {
+  color: rainbowBorder; /* Replace with the color code or name you want for the placeholder text */
+}
+
+input {
+  all: unset;
+  border-radius: 25px;
+  padding: 10px;
+  color: white;
+  border: 3px solid;
+  animation: rainbowBorder 4s linear infinite; /* Adjust the duration or animation timing as needed */
+}
+input::placeholder {
+  color: rainbowBorder; /* Replace with the color code or name you want for the placeholder text */
+}
+button{
+  all:unset;
+  display: flex;
+  
+  justify-content: center;
+  padding:10px;
+
+  border-radius: 25px;
+  
+  border:3px solid cyan;
+  
+}
+
+hr{
+  width: 100%;
+}
+
+.gamecenter_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.gamecenter_players{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:25px;
+}
+
+.player_card{
+  font-size: 25px;
+  padding: 10px;
+  width:100px;
+  border-radius: 10px;
+  border:2px solid black;
+}
+
+.choose_games_container{
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  gap:25px;
+}
+
+.game_chosen{
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+
+}

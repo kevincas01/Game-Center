@@ -1,0 +1,162 @@
+:root {
+    --correct:#6aaa64;
+    --wrong-place: #c9b458; /* Default color */
+    --wrong:#787c7e;
+  }
+
+.wordle-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    gap:5px;
+    margin-bottom: 5px;
+    
+}
+
+
+
+.letter-card{
+    display: flex;
+    border: 3px solid rgb(169, 168, 168);
+    width: 75px;
+    height: 75px;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 45px;
+    font-weight: bold;
+    
+}
+
+.keyboard-grid{
+    margin-top: 15px;
+    /* position:fixed;
+    bottom:0; */
+}
+.keyboard-letters{
+    display: flex;
+    justify-content: center;
+    gap:7px;
+    margin-bottom:7px;
+}
+.keyboard-letter{
+    all:unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width:50px;
+    height:75px;
+    padding: 0px 2px;
+    background-color: #d3d6da;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.keyboard-letter.special { 
+    width: 100px;
+}
+
+
+.wordle-grid{
+    margin-top: 25px;
+}
+
+.letter-card.correct{
+    background-color: var(--correct);
+border: none;
+width:80px;
+height:80px;
+color:white;}
+
+.letter-card.wrong-place{
+    background-color: var(--wrong-place);
+    border: none;
+    width:80px;
+    height:80px;
+    color:white;
+}
+.letter-card.wrong{
+    background-color:var(--wrong);
+    border: none;
+    width:80px;
+    height:80px;
+    color:white;
+}
+
+.keyboard-letter.correct{
+    background-color: var(--correct);
+    color:white;
+}
+.keyboard-letter.wrong-place{
+    background-color: var(--wrong-place);
+    color:white;
+}
+.keyboard-letter.wrong{
+    background-color: var(--wrong);
+    color:white;
+}
+
+.view-results{
+    margin-top: 25px;
+}
+.view-results{
+    border: 2px solid black;
+    color:black;
+}
+
+@media screen and (max-width: 430px) {
+    .letter-card{ 
+        width: 12vw;
+        height: 12vw;
+     font-size: 30px;}
+ 
+     .keyboard-letters{
+        gap:3px;
+        
+    }
+    .keyboard-letter.special { 
+        width: 60px;
+    }
+     .keyboard-letter{
+         width:5vw;
+         height:8vw;
+         padding:5px;
+     }
+     
+
+    .letter-card.correct{
+        
+    width:calc(12vw + 6px);
+    height:calc(12vw + 6px);
+    color:white;}
+    
+    .letter-card.wrong-place{
+        
+        width:calc(12vw + 6px);
+        height:calc(12vw + 6px);
+        color:white;
+    }
+    .letter-card.wrong{
+        
+        width:calc(12vw + 6px);
+        height:calc(12vw + 6px);
+        color:white;
+    }
+    
+    
+ }
+
+ 

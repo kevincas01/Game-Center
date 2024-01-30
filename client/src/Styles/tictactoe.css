@@ -1,0 +1,31 @@
+.tictactoe_board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.board-row{
+    padding:0px;
+    margin:0px;
+    display: flex;
+}
+.square {
+    all:unset;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 50px; /* Adjust the width of each square */
+    height: 50px; /* Adjust the height of each square */
+    width: 15vw;
+    height:15vw;
+    background-color: #ecf0f1;
+
+    border-radius: none;
+    border: 1px solid #bdc3c7;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    
+  }

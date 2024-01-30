@@ -1,0 +1,44 @@
+
+
+
+.modal_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    border-radius: 15px;
+    padding:10px;
+    width:500px;
+    height:400px;
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.close-modal{
+    color:black;
+    position: absolute;
+    right:10px;
+    top:10px;
+
+}
+@media screen and (max-width: 768px) {
+    .modal{
+        width:250px;
+    }
+}
